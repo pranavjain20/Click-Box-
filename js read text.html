@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<script language='javascript'>
+	
+  
+	function remove()
+	{
+		// document.write("num" + document.great.num.value);
+
+		if (document.great.numb.value == "")
+		{
+			document.getElementById("numb").value = document.great.num.value;
+            document.great.ok.value = "< JUMP";
+			document.getElementById("num").value = "";
+		}
+
+		else if (document.great.num.value == "")
+		{
+			document.getElementById("num").value = document.great.numb.value;
+			document.great.ok.value = "JUMP >";
+			document.getElementById("numb").value = "";
+		}
+
+	}
+
+</script>
+</head>
+
+<body>
+
+	<form name = "great">
+	<input type="text" name="num" id="num" placeholder="" value = "">
+	&nbsp; &nbsp; 
+    
+	<input type="button" name = "ok" value="JUMP >"
+		   id="btn1" onclick = "remove()">
+		  &nbsp; &nbsp;  
+
+	<input type="text" name="numb" id="numb" placeholder="" value = ""><br>
+
+	</form>
+
+</body>
+</html>
